@@ -1,0 +1,19 @@
+Javascript Datatypes:
+
+JavaScript, like any other programming language, has its own data structures and types. JavaScript has a few data types that we have to know about in order to build programs with it. Different pieces of data can be put together to build more complex data structures.
+JavaScript is a loosely typed, or dynamically typed, language. This means that a variable that’s declared with one type can be converted to another type without explicitly converting the data to another type. Variables can also contain any type at any time, depending on what’s assigned.
+
+JavaScript has multiple data types. There are seven primitive data types and an object type. The seven primitive types are Boolean, null, undefined, number, BigInt, string, and symbol.
+All of JavaScript’s primitive types are immutable, which means that they can’t be changed. The primitive types contain values that are fixed once they’re defined. The Boolean type is either true or false and represents logical entities. The null type only has one value, which is null . The null value means that it refers to some nonexistent or invalid object or address. The undefined type is unique to JavaScript. It means that a variable hasn’t been assigned any value.
+
+1.Numbers:
+There are two number types in JavaScript, which are number and BigInt. The number type is a double-precision 64-bit number that can have values between -2 to the 53rd power minus 1 and 2 to the 53rd power minus 1. There’s no specific type for integers. All numbers are floating point numbers. There are also three symbolic values: Infinity , -Infinity and NaN.
+
+2.Strings:
+Strings are used to represent textual data. Each element of the string has its own position in the string. It’s zero-indexed, so the position of the first character of a string is 0. The length property of the string has the total number of characters of the string.
+
+3.Symbols:
+Symbols are new to ES2015. It is a unique and immutable identifier. Once you have created it, it cannot be copied. Every time you create a new symbol, it’s a unique one. Symbols are mainly used for unique identifiers in an object. That’s a symbol’s only purpose.
+
+4.Objects:
+Object is a reference data type, which means it can be referenced by an identifier that points to the location of the object in memory. In memory, the object’s value is stored, and, with the identifier, we can access the value. Object has properties, which are key-value pairs with the values being able to contain the data with primitive types or other objects. That means we can use object to build complex data structures. The key is an identifier for the values of a property, which can be stored as a string or symbol. There are two types of properties that have certain attributes in an object. Objects have data properties and accessor properties.
