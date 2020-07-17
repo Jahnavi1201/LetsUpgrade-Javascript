@@ -1,0 +1,45 @@
+<script type="text/javascript">
+  grade="";
+  var marks=window.prompt("Enter your total marks");
+  //Using conditionals
+  if(marks>=90)
+  grade="A";
+  else if(marks>=80)
+  grade="B";
+  else if(marks>=70)
+  grade="C";
+  else if(marks>=60)
+  grade="D";
+  else if(marks>=50)
+  grade="E";
+  else
+  grade="F";
+  //Using switch
+  switch(true){
+    case (marks>=90):
+    grade="A";
+    break;
+    case (marks>=80):
+    grade="B";
+    break;
+    case (marks>=70):
+    grade="C";
+    break;
+    case (marks>=60):
+    grade="D";
+    break;
+    case (marks>=50):
+    grade="E";
+    break;
+    case (marks<50):
+    grade="F";
+    break;
+  }
+  //Using ternary operator
+  grade=marks>=90?"A":"F";
+  grade=marks>=80?"B":"F";
+  grade=marks>=70?"C":"F";
+  grade=marks>=60?"D":"F";
+  grade=marks>=50?"E":"F";
+  console.log("Marks are "+marks+" and grade is "+grade);
+</script>
