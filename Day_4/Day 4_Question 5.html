@@ -1,0 +1,12 @@
+<script type="text/javascript">
+  var sales=parseInt(window.prompt("Enter your sales amt"));
+  if(sales>=0 && sales<=5000)
+  sales+=(sales*2/100);
+  if(sales>=5001 && sales<=10000)
+  sales+=sales+(sales*5/100);
+  if(sales>=10001 && sales<=20000)
+  sales+=sales+(sales*7/100);
+  if(sales>20000)
+  sales+=sales+(sales*10/100);
+  console.log("Total Commision : "+sales);
+</script>

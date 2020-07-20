@@ -1,0 +1,29 @@
+<script type="text/javascript">
+  var flag=0;
+    var choice=parseInt(window.prompt("Enter your choice of operation:\n1.Addition\n2.Subtraction\n3.Multiplication\n4.Division\n5.Percentage\n6.Square root"));
+    if(choice<=4 && choice >=1){
+      var a=parseInt(window.prompt("Enter first value:"));
+      var b=parseInt(window.prompt("Enter second value:"));
+      if(choice==1)
+      document.write("Result is: "+(a+b));
+      else if(choice==2)
+      document.write("Result is: "+(a-b));
+      else if(choice==3)
+      document.write("Result is: "+(a*b));
+      else
+      document.write("Result is: "+(a/b));
+    }
+    else if(choice==5){
+      var percentage=parseFloat(window.prompt("Enter percentage value:"));
+      var amt=parseFloat(window.prompt("Enter total amount:"));
+      document.write("Result is: "+(percentage*amt)/100);
+    }
+    else if(choice==6)
+    {
+      var n=parseInt(window.prompt("Enter n value"));
+      document.write("Result is: "+Math.sqrt(n));
+    }
+    else{
+       var choice=parseInt(window.prompt("Invalid choice!Enter your choice of operation again:"));
+    }
+</script>

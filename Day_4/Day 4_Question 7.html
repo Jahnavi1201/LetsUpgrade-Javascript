@@ -1,0 +1,22 @@
+<script type="text/javascript">
+  var flag=0;
+  var n=window.prompt("Enter n value");
+  document.write("<h1>Primes in the range 2 and "+n+" are:</h1>");
+  for(var i=2;i<=n;i++){
+    var j=2;
+    if(i==2 || i==3 || i==5)
+    document.write("<h1>"+i+"</h1>"+" ");
+    else{
+      flag=0;
+    while(j*j<=i){
+      if(i%j==0){
+        flag=1;
+        break;
+      }
+      j+=1;
+    }
+    if(flag==0)
+    document.write("<h1>"+i+"</h1>"+" ");
+  }
+  }
+</script>
