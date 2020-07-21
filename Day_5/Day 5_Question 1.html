@@ -1,0 +1,10 @@
+<script type="text/javascript">
+  let num=prompt("Enter a positive integer and if you wanna end giving input, enter -1:");
+  var arr=[];
+  while(num!=-1){
+    arr.push(parseInt(num));
+    num=prompt("Enter a positive integer and if you wanna end giving input, enter -1:");
+  }
+  let odd_nums=arr.filter(ele=>ele%2!=0).map(ele=>ele**3);
+  document.write("The cubes of odd numbers are : ".bold()+odd_nums);
+</script>
