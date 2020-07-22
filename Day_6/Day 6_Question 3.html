@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+           padding: 25px;
+           font-size: 25px;
+           text-align:center;
+          }
+
+          .dark-mode {
+           background-color: black;
+           color: white;
+          }
+          button{
+            color:green;
+          }
+    </style>
+</head>
+<body  onload="startTime()">
+    <script>
+        var n=prompt("Enter the name");
+        document.write(`Welcome  ${n}`);
+        function startTime() {
+          var today = new Date();
+          var h = today.getHours();
+          var m = today.getMinutes();
+          var s = today.getSeconds();
+           m = checkTime(m);
+           s = checkTime(s);
+           document.getElementById('txt').innerHTML =
+            h + ":" + m + ":" + s;
+            var t = setTimeout(startTime, 500);
+        }
+          function checkTime(i) {
+          if (i < 10) {i = "0" + i};
+           return i;
+        }
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+            if(document.getElementById("button").innerHTML=="Dark Mode")
+            document.getElementById("button").innerHTML="Normal Mode";
+            else
+            document.getElementById("button").innerHTML="Dark Mode";
+        }
+
+    </script>
+    <p id="txt"></p>
+    <button id="button" onclick="myFunction()">Dark Mode</button>
+</body>
+</html>

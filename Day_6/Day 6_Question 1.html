@@ -1,0 +1,24 @@
+<script language=javascript>
+var count=0;
+paint();
+function setTime()
+{
+setTimeout("paint()",5000);
+}
+function paint()
+{
+var colors=["pink","skyblue","gold","red"];
+if(count<5)
+{
+document.bgColor=colors[count++];
+setTimeout("paint()",5000);
+}
+else
+{
+count=0;
+setTime();
+}
+}
+</script>
+<body bgcolor="blue" onload=setTime()>
+</body>
